@@ -6,4 +6,9 @@
 .form-section {
   background-color: #59a17e;
   height: 200px;
+  min-width: 300px;
+}
+
+.boton-submit {
+  width: 100px;
 }
