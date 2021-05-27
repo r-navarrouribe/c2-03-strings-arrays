@@ -11,23 +11,50 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <script src="js/analiza-palabras.js"></script>
     <script src="js/scripts.js" defer></script>
   </head>
 
   <body>
-    <div class="contenedor">
-      <main>
-        <label for="textarea">Palabras</label>
-        <form>
-          <textarea
-            name="textarea"
-            id="textarea"
-            cols="30"
-            rows="10"
-          ></textarea>
-        </form>
+    <div class="contenedor container-fluid">
+      <main
+        class="
+          contenedor-principal
+          row
+          justify-content-center
+          align-items-center
+        "
+      >
+        <section
+          class="
+            form-section
+            col-4
+            d-flex
+            justify-content-center
+            align-items-center
+            rounded
+          "
+        >
+          <form class="row">
+            <label for="textarea" class="text-white col-12 pl-0"
+              >Palabras:</label
+            >
+            <textarea
+              class="rounded col-12"
+              name="textarea"
+              id="textarea"
+              cols="16"
+              rows="2"
+            ></textarea>
+            <input
+              class="btn bg-primary col-3 mt-2"
+              type="submit"
+              value="Procesar"
+            />
+          </form>
+        </section>
       </main>
     </div>
   </body>
